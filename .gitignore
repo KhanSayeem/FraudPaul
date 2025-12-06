@@ -1,0 +1,17 @@
+# Large data and model artifacts
+creditcard.csv
+face_data/
+app/logs/
+app/models/
+*.pkl
+*.yml
+*.png
+*.jpg
+*.jpeg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit / local state
+.streamlit/

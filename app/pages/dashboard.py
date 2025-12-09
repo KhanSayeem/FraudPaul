@@ -259,12 +259,11 @@ def _quick_actions() -> None:
         if st.button("Go to Behavioral Monitoring", key="nav_behavior"):
             st.switch_page("pages/keystroke_monitoring.py")
     with action_cols[2]:
-        if st.button("Keystroke Monitoring", key="nav_keys"):
-            st.switch_page("pages/keystroke_monitoring.py")
+        if st.button("Federated Simulation", key="nav_federated"):
+            st.switch_page("pages/federated_simulation.py")
     with action_cols[3]:
         if st.button("View Security Logs", key="nav_logs"):
-            st.session_state["jump_to_logs"] = True
-            st.session_state["scroll_logs_now"] = True
+            st.switch_page("pages/logs.py")
 
 
 def _recent_events(df: pd.DataFrame, query: str = "") -> None:

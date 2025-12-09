@@ -140,12 +140,11 @@ def main() -> None:
             hide_index=True,
         )
 
-    st.subheader("Raw Log Preview")
-    if filtered_logs.empty:
-        st.info("Security log file is empty.")
-    else:
-        preview = filtered_logs.sort_values("timestamp", ascending=False).head(25)
-        st.dataframe(preview, use_container_width=True, hide_index=True)
+    st.divider()
+    st.subheader("Full logs")
+    st.caption("Open the dedicated logs page for raw entries and additional visuals.")
+    if st.button("View Security Logs", key="monitor_view_logs"):
+        st.switch_page("pages/logs.py")
 
 
 if __name__ == "__main__":

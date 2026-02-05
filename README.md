@@ -1,6 +1,6 @@
 # FraudPaul
 
-Streamlit workspace that blends classic fraud detection with behavioral biometrics. The app lets analysts upload/score transaction CSVs, review explainability, and monitor keystroke-based liveness/anomaly signals from enrolled users.
+Streamlit app for fraud detection with behavioral biometrics. The app lets analysts upload/score transaction CSVs, review explainability, and monitor keystroke-based liveness/anomaly signals from enrolled users.
 
 ## What it does
 - Scores card transactions with trained models (RandomForest/XGBoost) and shows metrics, flags, and SHAP insights.
